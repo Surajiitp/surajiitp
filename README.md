@@ -27,5 +27,5 @@
 ###  Socials
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge)](https://www.linkedin.com/in/suraj-kumar-42b5a1355/)
-[![Email](https://img.shields.io/badge/Email-red?style=for-the-badge)]((mailto:razz912340@gmail.com))
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kumar349118@gmail.com)
 ![Profile View Counter](https://komarev.com/ghpvc/?username=Surajiitp&color=blue)
