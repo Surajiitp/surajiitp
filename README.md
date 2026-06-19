@@ -28,7 +28,7 @@
 
 ## 🔥 GitHub Streak
 
-<p align="center">
+<p align="left">
   <img src="https://streak-stats.demolab.com?user=Surajiitp&theme=tokyonight" />
 </p>
 
