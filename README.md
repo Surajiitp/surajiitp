@@ -26,11 +26,14 @@
 
 
 
+
 ## 🔥 GitHub Streak
 
-<p align="left">
-  <img src="https://streak-stats.demolab.com?user=Surajiitp&theme=tokyonight&cache_seconds=1" />
-/p>
+<img src="https://streak-stats.demolab.com?user=Surajiitp&theme=tokyonight" />
+
+## 📈 Contribution Graph
+
+[![Suraj's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Surajiitp&theme=tokyo-night)](https://github.com/Surajiitp)
 
 ###  Socials
 
