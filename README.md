@@ -34,6 +34,14 @@
 
 [![Suraj's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Surajiitp&theme=tokyo-night)](https://github.com/Surajiitp)
 
+
+
+## 🐍 Contribution Snake
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Surajiitp/Surajiitp/output/github-contribution-grid-snake-dark.svg" alt="snake">
+</p>
+
 ###  Socials
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge)](https://www.linkedin.com/in/suraj-kumar-42b5a1355/)
