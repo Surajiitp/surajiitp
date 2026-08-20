@@ -24,11 +24,11 @@
 [![LeetCode Profile](https://img.shields.io/badge/LeetCode-Profile-orange?style=for-the-badge&logo=leetcode)](https://leetcode.com/Surajiitp/)
 
 
-
-
 ## 🔥 GitHub Streak
 
-<img src="https://streak-stats.demolab.com?user=Surajiitp&theme=tokyonight" />
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=Surajiitp&theme=tokyonight&hide_border=true" />
+</p>
 
 ## 📈 Contribution Graph
 
