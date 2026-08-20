@@ -24,11 +24,9 @@
 [![LeetCode Profile](https://img.shields.io/badge/LeetCode-Profile-orange?style=for-the-badge&logo=leetcode)](https://leetcode.com/Surajiitp/)
 
 ## 🔥 GitHub Streak
-
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Surajiitp&theme=tokyonight&hide_border=true" />
 </p>
-
 ## 📈 Contribution Graph
 
 [![Suraj's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Surajiitp&theme=tokyo-night)](https://github.com/Surajiitp)
