@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+width="700"
+height="360"
+viewBox="0 0 700 360">
+
+  <rect
+    width="700"
+    height="360"
+    rx="18"
+    fill="#0d1117"
+  />
+
+  <text
+    x="40"
+    y="50"
+    fill="#2F8D46"
+    font-size="24"
+    font-family="Arial"
+    font-weight="bold">
+    GeeksforGeeks Stats
+  </text>
+
+  <text
+    x="40"
+    y="105"
+    fill="#8b949e"
+    font-size="16"
+    font-family="Arial">
+    TOTAL SOLVED
+  </text>
+
+  <text
+    x="40"
+    y="150"
+    fill="white"
+    font-size="42"
+    font-family="Arial"
+    font-weight="bold">
+    148
+  </text>
+
+  <text
+    x="40"
+    y="205"
+    fill="#8b949e"
+    font-size="17"
+    font-family="Arial">
+    Easy
+  </text>
+
+  <rect
+    x="130"
+    y="190"
+    width="430"
+    height="16"
+    rx="8"
+    fill="#21262d"
+  />
+
+  <rect
+    x="130"
+    y="190"
+    width="204"
+    height="16"
+    rx="8"
+    fill="#00bfa5"
+  />
+
+  <text
+    x="620"
+    y="205"
+    fill="white"
+    font-size="17"
+    font-family="Arial">
+    51
+  </text>
+
+  <text
+    x="40"
+    y="250"
+    fill="#8b949e"
+    font-size="17"
+    font-family="Arial">
+    Medium
+  </text>
+
+  <rect
+    x="130"
+    y="235"
+    width="430"
+    height="16"
+    rx="8"
+    fill="#21262d"
+  />
+
+  <rect
+    x="130"
+    y="235"
+    width="244"
+    height="16"
+    rx="8"
+    fill="#ffb300"
+  />
+
+  <text
+    x="620"
+    y="250"
+    fill="white"
+    font-size="17"
+    font-family="Arial">
+    61
+  </text>
+
+  <text
+    x="40"
+    y="295"
+    fill="#8b949e"
+    font-size="17"
+    font-family="Arial">
+    Hard
+  </text>
+
+  <rect
+    x="130"
+    y="280"
+    width="430"
+    height="16"
+    rx="8"
+    fill="#21262d"
+  />
+
+  <rect
+    x="130"
+    y="280"
+    width="48"
+    height="16"
+    rx="8"
+    fill="#ff375f"
+  />
+
+  <text
+    x="620"
+    y="295"
+    fill="white"
+    font-size="17"
+    font-family="Arial">
+    12
+  </text>
+
+  <text
+    x="40"
+    y="335"
+    fill="#8b949e"
+    font-size="14"
+    font-family="Arial">
+    @codewithsuraj1
+  </text>
+
+</svg>
