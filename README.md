@@ -103,33 +103,23 @@
   </a>
 </p>
 
-## 🟢 GeeksforGeeks Stats
-
-<p align="center">
-  <img
-    src="https://gfg-stats.tashif.codes/codewithsuraj1/stats/svg?theme=dark"
-    alt="GeeksforGeeks Stats"
-  />
-</p>
-
-<p align="center">
-  <a href="https://www.geeksforgeeks.org/profile/codewithsuraj1">
-    <img
-      src="https://img.shields.io/badge/GeeksforGeeks-Profile-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white"
-      alt="GeeksforGeeks Profile"
-    />
-  </a>
-</p>
-
----
-
 ## 🔥 GitHub Streak
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Surajiitp&theme=tokyonight&hide_border=true" />
 </p>
+## 🟢 GeeksforGeeks Stats
+
+<p align="center">
+  <img src="./profile/gfg-stats.svg" alt="GeeksforGeeks Stats"/>
+</p>
+
+<p align="center">
+  <a href="https://www.geeksforgeeks.org/profile/codewithsuraj1">
+    <img src="https://img.shields.io/badge/GeeksforGeeks-Profile-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white"/>
+  </a>
+</p>
 
 ---
-
 ## 📈 Contribution Graph
 
 <p align="center">
