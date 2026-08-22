@@ -16,199 +16,83 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
       - name: Get GFG Stats
         run: |
-          mkdir -p profile
-          curl -fsSL "https://gfg-stats.tashif.codes/codewithsuraj1/stats" -o gfg.json
+          python - <<'PY'
+          import requests
+          import re
 
-      - name: Generate GFG SVG
-        run: |
-          python3 <<'PY'
-          import json
+          username = "codewithsuraj1"
+          url = f"https://www.geeksforgeeks.org/profile/{username}/"
 
-          with open("gfg.json", "r") as f:
-              response = json.load(f)
+          response = requests.get(
+              url,
+              headers={"User-Agent": "Mozilla/5.0"},
+              timeout=30
+          )
 
-          data = response["data"]
+          print("Status:", response.status_code)
 
-          total = data["totalSolved"]
-          easy = data["byDifficulty"].get("easy", 0)
-          medium = data["byDifficulty"].get("medium", 0)
-          hard = data["byDifficulty"].get("hard", 0)
+          html = response.text
 
-          svg = f'''<svg xmlns="http://www.w3.org/2000/svg"
-          width="700"
-          height="360"
-          viewBox="0 0 700 360">
+          patterns = [
+              r'"total_problems_solved"\s*:\s*(\d+)',
+              r'"problemSolved"\s*:\s*(\d+)',
+              r'"problemsSolved"\s*:\s*(\d+)'
+          ]
 
-            <rect
-              width="700"
-              height="360"
-              rx="18"
-              fill="#0d1117"
-            />
+          total = None
 
-            <text
-              x="40"
-              y="50"
-              fill="#2F8D46"
-              font-size="24"
-              font-family="Arial"
-              font-weight="bold">
-              GeeksforGeeks Stats
-            </text>
+          for pattern in patterns:
+              match = re.search(pattern, html)
+              if match:
+                  total = match.group(1)
+                  break
 
-            <text
-              x="40"
-              y="105"
-              fill="#8b949e"
-              font-size="16"
-              font-family="Arial">
-              TOTAL SOLVED
-            </text>
+          if total is None:
+              raise Exception("Could not find GFG solved count")
 
-            <text
-              x="40"
-              y="150"
-              fill="white"
-              font-size="42"
-              font-family="Arial"
-              font-weight="bold">
-              {total}
-            </text>
+          print("GFG Problems Solved:", total)
 
-            <text
-              x="40"
-              y="205"
-              fill="#8b949e"
-              font-size="17"
-              font-family="Arial">
-              Easy
-            </text>
-
-            <rect
-              x="130"
-              y="190"
-              width="430"
-              height="16"
-              rx="8"
-              fill="#21262d"
-            />
-
-            <rect
-              x="130"
-              y="190"
-              width="{min(easy * 4, 430)}"
-              height="16"
-              rx="8"
-              fill="#00bfa5"
-            />
-
-            <text
-              x="620"
-              y="205"
-              fill="white"
-              font-size="17"
-              font-family="Arial">
-              {easy}
-            </text>
-
-            <text
-              x="40"
-              y="250"
-              fill="#8b949e"
-              font-size="17"
-              font-family="Arial">
-              Medium
-            </text>
-
-            <rect
-              x="130"
-              y="235"
-              width="430"
-              height="16"
-              rx="8"
-              fill="#21262d"
-            />
-
-            <rect
-              x="130"
-              y="235"
-              width="{min(medium * 4, 430)}"
-              height="16"
-              rx="8"
-              fill="#ffb300"
-            />
-
-            <text
-              x="620"
-              y="250"
-              fill="white"
-              font-size="17"
-              font-family="Arial">
-              {medium}
-            </text>
-
-            <text
-              x="40"
-              y="295"
-              fill="#8b949e"
-              font-size="17"
-              font-family="Arial">
-              Hard
-            </text>
-
-            <rect
-              x="130"
-              y="280"
-              width="430"
-              height="16"
-              rx="8"
-              fill="#21262d"
-            />
-
-            <rect
-              x="130"
-              y="280"
-              width="{min(hard * 4, 430)}"
-              height="16"
-              rx="8"
-              fill="#ff375f"
-            />
-
-            <text
-              x="620"
-              y="295"
-              fill="white"
-              font-size="17"
-              font-family="Arial">
-              {hard}
-            </text>
-
-            <text
-              x="40"
-              y="335"
-              fill="#8b949e"
-              font-size="14"
-              font-family="Arial">
-              @codewithsuraj1
-            </text>
-
-          </svg>'''
-
-          with open("profile/gfg-stats.svg", "w") as f:
-              f.write(svg)
+          with open("profile/gfg-count.txt", "w") as f:
+              f.write(total)
           PY
 
-      - name: Commit updated stats
+      - name: Update README
+        run: |
+          python - <<'PY'
+          import re
+
+          with open("profile/gfg-count.txt") as f:
+              count = f.read().strip()
+
+          with open("README.md", "r", encoding="utf-8") as f:
+              readme = f.read()
+
+          readme = re.sub(
+              r'(GFG_PROBLEMS_SOLVED:\s*)\d+',
+              rf'\g<1>{count}',
+              readme
+          )
+
+          with open("README.md", "w", encoding="utf-8") as f:
+              f.write(readme)
+          PY
+
+      - name: Commit and Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add profile/gfg-stats.svg
+          git add README.md profile/gfg-count.txt
 
           if git diff --cached --quiet; then
-            echo "No changes to commit"
+            echo "No changes"
           else
             git commit -m "Update GFG stats"
             git push
