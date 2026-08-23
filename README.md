@@ -104,9 +104,12 @@
 </p>
 
 ## 🔥 GitHub Streak
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Surajiitp&theme=tokyonight&hide_border=true" />
-</p>
+
+![GitHub Streak](https://github-readme-streak-stats.demolab.com/?user=Surajiitp&theme=dark)
+
+## 📊 GitHub Stats
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Surajiitp&show_icons=true&theme=dark)
 
 ## 📈 Contribution Graph
 
