@@ -103,13 +103,6 @@
   </a>
 </p>
 
-## 🔥 GitHub Streak
-
-![GitHub Streak](https://github-readme-streak-stats.demolab.com/?user=Surajiitp&theme=dark)
-
-## 📊 GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Surajiitp&show_icons=true&theme=dark)
 
 ## 📈 Contribution Graph
 
