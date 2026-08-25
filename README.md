@@ -103,12 +103,9 @@
   </a>
 </p>
 
-
 ## 📊 GitHub Stats
-<p align="center"> <img height="165" src="https://github-readme-stats.vercel.app/api?username=Surajiitp&show_icons=true&theme=dark&hide_border=true&count_private=true" /> <img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=Surajiitp&theme=dark&hide_border=true" /> </p>
+<p align="center"> <img height="165" src="https://github-stats-extended.vercel.app/api?username=Surajiitp&show_icons=true&theme=dark&hide_border=true" /> <img height="165" src="https://github-readme-streak-stats-eight.vercel.app?user=Surajiitp&theme=dark&hide_border=true" /> </p>
 
-## 📈 Contribution Graph
-<p align="center"> <img src="https://github-readme-activity-graph.vercel.app/graph?username=Surajiitp&theme=react-dark&hide_border=true" /> </p>
 
 ## 🐍 Contribution Snake
 
